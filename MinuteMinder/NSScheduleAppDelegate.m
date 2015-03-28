@@ -8,6 +8,8 @@
 
 #import "NSScheduleAppDelegate.h"
 
+#import "MinuteMinderViewController.h"
+
 @implementation NSScheduleAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -18,8 +20,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor colorWithRed:240 green:243 blue:246 alpha:1];
     [self.window makeKeyAndVisible];
+    
+    MinuteMinderViewController *main = [[MinuteMinderViewController alloc] init];
+    self.window.rootViewController = main;
+    [main start];
     return YES;
 }
 

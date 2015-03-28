@@ -22,6 +22,14 @@
 		58735E491993CC6800B8442C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58735E2D1993CC6800B8442C /* CoreData.framework */; };
 		58735E511993CC6800B8442C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58735E4F1993CC6800B8442C /* InfoPlist.strings */; };
 		58735E531993CC6800B8442C /* MinuteMinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58735E521993CC6800B8442C /* MinuteMinderTests.m */; };
+		58735E5E1993CCC000B8442C /* MinuteMinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58735E5D1993CCC000B8442C /* MinuteMinderViewController.m */; };
+		58735E651993CDBF00B8442C /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 58735E641993CDBF00B8442C /* plus.png */; };
+		58735E671993CDC700B8442C /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 58735E661993CDC700B8442C /* close.png */; };
+		58735E691993CDE400B8442C /* checkmark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 58735E681993CDE400B8442C /* checkmark2.png */; };
+		58735E6B1993CDED00B8442C /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 58735E6A1993CDED00B8442C /* checkmark.png */; };
+		58735E6C1993EF8F00B8442C /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58735E621993CD9600B8442C /* OpenSans-Light.ttf */; };
+		58735E6D1993EF9200B8442C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58735E611993CD8D00B8442C /* OpenSans-Bold.ttf */; };
+		58735E731994159500B8442C /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 58735E721994159500B8442C /* logo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,15 @@
 		58735E4E1993CC6800B8442C /* MinuteMinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinuteMinderTests-Info.plist"; sourceTree = "<group>"; };
 		58735E501993CC6800B8442C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58735E521993CC6800B8442C /* MinuteMinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinuteMinderTests.m; sourceTree = "<group>"; };
+		58735E5C1993CCC000B8442C /* MinuteMinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinuteMinderViewController.h; sourceTree = "<group>"; };
+		58735E5D1993CCC000B8442C /* MinuteMinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinuteMinderViewController.m; sourceTree = "<group>"; };
+		58735E611993CD8D00B8442C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		58735E621993CD9600B8442C /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		58735E641993CDBF00B8442C /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		58735E661993CDC700B8442C /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		58735E681993CDE400B8442C /* checkmark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark2.png; sourceTree = "<group>"; };
+		58735E6A1993CDED00B8442C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		58735E721994159500B8442C /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +132,12 @@
 		58735E2F1993CC6800B8442C /* MinuteMinder */ = {
 			isa = PBXGroup;
 			children = (
+				58735E631993CDA100B8442C /* Images */,
+				58735E5F1993CD5F00B8442C /* Resources */,
 				58735E381993CC6800B8442C /* NSScheduleAppDelegate.h */,
 				58735E391993CC6800B8442C /* NSScheduleAppDelegate.m */,
+				58735E5C1993CCC000B8442C /* MinuteMinderViewController.h */,
+				58735E5D1993CCC000B8442C /* MinuteMinderViewController.m */,
 				58735E3E1993CC6800B8442C /* Images.xcassets */,
 				58735E3B1993CC6800B8442C /* MinuteMinder.xcdatamodeld */,
 				58735E301993CC6800B8442C /* Supporting Files */,
@@ -151,6 +172,35 @@
 				58735E4F1993CC6800B8442C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58735E5F1993CD5F00B8442C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58735E601993CD6A00B8442C /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		58735E601993CD6A00B8442C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58735E611993CD8D00B8442C /* OpenSans-Bold.ttf */,
+				58735E621993CD9600B8442C /* OpenSans-Light.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		58735E631993CDA100B8442C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				58735E6A1993CDED00B8442C /* checkmark.png */,
+				58735E681993CDE400B8442C /* checkmark2.png */,
+				58735E641993CDBF00B8442C /* plus.png */,
+				58735E661993CDC700B8442C /* close.png */,
+				58735E721994159500B8442C /* logo2.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +280,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				58735E341993CC6800B8442C /* InfoPlist.strings in Resources */,
+				58735E691993CDE400B8442C /* checkmark2.png in Resources */,
+				58735E6D1993EF9200B8442C /* OpenSans-Bold.ttf in Resources */,
+				58735E6C1993EF8F00B8442C /* OpenSans-Light.ttf in Resources */,
 				58735E3F1993CC6800B8442C /* Images.xcassets in Resources */,
+				58735E671993CDC700B8442C /* close.png in Resources */,
+				58735E651993CDBF00B8442C /* plus.png in Resources */,
+				58735E6B1993CDED00B8442C /* checkmark.png in Resources */,
+				58735E731994159500B8442C /* logo2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +309,7 @@
 				58735E3A1993CC6800B8442C /* NSScheduleAppDelegate.m in Sources */,
 				58735E3D1993CC6800B8442C /* MinuteMinder.xcdatamodeld in Sources */,
 				58735E361993CC6800B8442C /* main.m in Sources */,
+				58735E5E1993CCC000B8442C /* MinuteMinderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinuteMinder/MinuteMinder-Prefix.pch";
 				INFOPLIST_FILE = "MinuteMinder/MinuteMinder-Info.plist";
@@ -383,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinuteMinder/MinuteMinder-Prefix.pch";
 				INFOPLIST_FILE = "MinuteMinder/MinuteMinder-Info.plist";
